@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/meteor_img"
+        android:cropToPadding="false"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/listItemImg" />
+
+    <TextView
+        android:text="North america"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listItemName"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/listItemImg"
+
+        android:layout_toRightOf="@+id/listItemImg"
+        android:layout_toEndOf="@+id/listItemImg"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:text="2007, 555.865kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listItemYearWeight"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/listItemName"
+        android:layout_alignLeft="@+id/listItemName"
+        android:layout_alignStart="@+id/listItemName" />
+
+</RelativeLayout>
